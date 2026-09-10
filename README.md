@@ -117,8 +117,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_creacion": {"$date": "2026-01-10T10:10:00.000Z"}
   }
 ]
-
-
+```
 ### 5.2. Colección: usuarios
 ```json
 
@@ -128,7 +127,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "email": "admin@jolie-store.com",
     "rol": "admin",
     "nombre": "Valeria",
-    "apellido": "Solís",
+    "apellido": "Villegas",
     "telefono": "+5492964551122",
     "direcciones": [
       {
@@ -181,8 +180,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_creacion": {"$date": "2026-02-18T19:45:00.000Z"}
   }
 ]
-
+```
 ### 5.3. Colección: productos
+```json
 [
   {
     "_id": {"$oid": "662000000000000000000001"},
@@ -191,8 +191,8 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "precio_base": 48500,
     "id_categoria": {"$oid": "660000000000000000000002"},
     "imagenes": [
-      "[https://res.cloudinary.com/jolie/buzo-noir-1.webp](https://res.cloudinary.com/jolie/buzo-noir-1.webp)",
-      "[https://res.cloudinary.com/jolie/buzo-noir-2.webp](https://res.cloudinary.com/jolie/buzo-noir-2.webp)"
+      "https://res.cloudinary.com/jolie/buzo-noir-1.webp",
+       "https://res.cloudinary.com/jolie/buzo-noir-2.webp"
     ],
     "variantes": [
       {
@@ -218,7 +218,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "precio_base": 24000,
     "id_categoria": {"$oid": "660000000000000000000001"},
     "imagenes": [
-      "[https://res.cloudinary.com/jolie/remera-boxy-white.webp](https://res.cloudinary.com/jolie/remera-boxy-white.webp)"
+      "https://res.cloudinary.com/jolie/remera-boxy-white.webp"
     ],
     "variantes": [
       {
@@ -244,7 +244,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "precio_base": 56000,
     "id_categoria": {"$oid": "660000000000000000000003"},
     "imagenes": [
-      "[https://res.cloudinary.com/jolie/cargo-beige-1.webp](https://res.cloudinary.com/jolie/cargo-beige-1.webp)"
+      "https://res.cloudinary.com/jolie/cargo-beige-1.webp"
     ],
     "variantes": [
       {
@@ -264,9 +264,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_creacion": {"$date": "2026-02-25T16:15:00.000Z"}
   }
 ]
-
+```
 ### 5.4. Colección: ordenes
-
+```json
 [
   {
     "_id": {"$oid": "663000000000000000000001"},
@@ -404,9 +404,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_pago": null
   }
 ]
-
+```
 ### 5.5. Colección: carritos
-
+```json
 [
   {
     "_id": {"$oid": "664000000000000000000001"},
@@ -433,9 +433,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_actualizacion": {"$date": "2026-02-01T08:00:00.000Z"}
   }
 ]
-
+```
 ### 5.6. Colección: calificaciones
-
+```json
 [
   {
     "_id": {"$oid": "665000000000000000000001"},
@@ -468,9 +468,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_creacion": {"$date": "2026-03-07T18:40:00.000Z"}
   }
 ]
-
+```
 ### 5.7. Colección: favoritos
-
+```json
 [
   {
     "_id": {"$oid": "667000000000000000000001"},
@@ -491,9 +491,9 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_agregado": {"$date": "2026-03-03T10:20:00.000Z"}
   }
 ]
-
+```
 5.8. Colección: descuentos
-
+```json
 [
   {
     "_id": {"$oid": "666000000000000000000001"},
