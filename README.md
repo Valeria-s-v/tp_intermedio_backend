@@ -117,8 +117,10 @@ Documentos JSON representativos de cada colección con consistencia referencial 
   }
 ]
 
-### 5.2. Colección: `usuarios`
+
+### 5.2. Colección: usuarios
 ```json
+
 [
   {
     "_id": {"$oid": "661000000000000000000001"},
@@ -179,7 +181,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
   }
 ]
 
-### 5.3. Colección: `productos`
+### 5.3. Colección: productos
 [
   {
     "_id": {"$oid": "662000000000000000000001"},
@@ -263,6 +265,7 @@ Documentos JSON representativos de cada colección con consistencia referencial 
 ]
 
 ### 5.4. Colección: ordenes
+
 [
   {
     "_id": {"$oid": "663000000000000000000001"},
@@ -400,3 +403,129 @@ Documentos JSON representativos de cada colección con consistencia referencial 
     "fecha_pago": null
   }
 ]
+
+### 5.5. Colección: carritos
+
+[
+  {
+    "_id": {"$oid": "664000000000000000000001"},
+    "id_usuario": {"$oid": "661000000000000000000002"},
+    "items": [],
+    "fecha_actualizacion": {"$date": "2026-03-08T18:30:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "664000000000000000000002"},
+    "id_usuario": {"$oid": "661000000000000000000003"},
+    "items": [
+      {
+        "id_producto": {"$oid": "662000000000000000000001"},
+        "id_variante": {"$oid": "662000000000000000000102"},
+        "cantidad": 1
+      }
+    ],
+    "fecha_actualizacion": {"$date": "2026-03-09T14:10:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "664000000000000000000003"},
+    "id_usuario": {"$oid": "661000000000000000000001"},
+    "items": [],
+    "fecha_actualizacion": {"$date": "2026-02-01T08:00:00.000Z"}
+  }
+]
+
+### 5.6. Colección: calificaciones
+
+[
+  {
+    "_id": {"$oid": "665000000000000000000001"},
+    "id_producto": {"$oid": "662000000000000000000001"},
+    "id_usuario": {"$oid": "661000000000000000000002"},
+    "puntuacion": 5,
+    "titulo": "Excelente abrigo y calce",
+    "comentario": "El buzo es de frisa pesada de verdad, muy abrigado y el talle M quedó perfecto.",
+    "compra_verificada": true,
+    "fecha_creacion": {"$date": "2026-03-04T11:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "665000000000000000000002"},
+    "id_producto": {"$oid": "662000000000000000000002"},
+    "id_usuario": {"$oid": "661000000000000000000002"},
+    "puntuacion": 4,
+    "titulo": "Buena tela pero cuello ajustado",
+    "comentario": "El algodón es muy suave y resistente a los lavados. El corte boxy es impecable.",
+    "compra_verificada": true,
+    "fecha_creacion": {"$date": "2026-03-05T15:20:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "665000000000000000000003"},
+    "id_producto": {"$oid": "662000000000000000000003"},
+    "id_usuario": {"$oid": "661000000000000000000003"},
+    "puntuacion": 5,
+    "titulo": "Muy funcional",
+    "comentario": "Los bolsillos carpenter son cómodos y la tela es gruesa. Recomendado.",
+    "compra_verificada": true,
+    "fecha_creacion": {"$date": "2026-03-07T18:40:00.000Z"}
+  }
+]
+
+### 5.7. Colección: favoritos
+
+[
+  {
+    "_id": {"$oid": "667000000000000000000001"},
+    "id_usuario": {"$oid": "661000000000000000000002"},
+    "id_producto": {"$oid": "662000000000000000000003"},
+    "fecha_agregado": {"$date": "2026-03-02T16:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "667000000000000000000002"},
+    "id_usuario": {"$oid": "661000000000000000000003"},
+    "id_producto": {"$oid": "662000000000000000000001"},
+    "fecha_agregado": {"$date": "2026-03-03T10:15:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "667000000000000000000003"},
+    "id_usuario": {"$oid": "661000000000000000000003"},
+    "id_producto": {"$oid": "662000000000000000000002"},
+    "fecha_agregado": {"$date": "2026-03-03T10:20:00.000Z"}
+  }
+]
+
+5.8. Colección: descuentos
+
+[
+  {
+    "_id": {"$oid": "666000000000000000000001"},
+    "codigo": "BIENVENIDA10",
+    "tipo": "porcentaje",
+    "valor": 10,
+    "usos_maximos": 500,
+    "cantidad_usos": 38,
+    "valido_desde": {"$date": "2026-01-01T00:00:00.000Z"},
+    "valido_hasta": {"$date": "2026-12-31T23:59:59.000Z"},
+    "activo": true
+  },
+  {
+    "_id": {"$oid": "666000000000000000000002"},
+    "codigo": "HOTWEEK5000",
+    "tipo": "fijo",
+    "valor": 5000,
+    "usos_maximos": 100,
+    "cantidad_usos": 100,
+    "valido_desde": {"$date": "2026-02-01T00:00:00.000Z"},
+    "valido_hasta": {"$date": "2026-02-28T23:59:59.000Z"},
+    "activo": false
+  },
+  {
+    "_id": {"$oid": "666000000000000000000003"},
+    "codigo": "JOLIEVIP",
+    "tipo": "porcentaje",
+    "valor": 15,
+    "usos_maximos": 50,
+    "cantidad_usos": 12,
+    "valido_desde": {"$date": "2026-03-01T00:00:00.000Z"},
+    "valido_hasta": {"$date": "2026-03-31T23:59:59.000Z"},
+    "activo": true
+  }
+]
+
