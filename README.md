@@ -1,7 +1,7 @@
 # Trabajo Práctico Intermedio de Bases de Datos: Diseño de Esquema NoSQL
 **Curso avanzado: Desarrollo Back-End**  
 **Centro de e-Learning UTN BA**  
-**Proyecto:** Jolie E-commerce
+**Proyecto:** Jolie E-commerce  
 **Alumna:** Valeria Villegas
 
 ---
